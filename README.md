@@ -29,6 +29,16 @@ Ejecutar
 
 FFMPEG es una herramienta para convertir video y audio en diferentes formatos. Se puede obtener desde el sitio oficial https://ffmpeg.org . En algunas configuraciones que mostraremos a continuación se utiliza para cambiar los codec.
 
+```
+# cd /my/path/where/i/keep/compiled/stuff
+# git clone http://source.ffmpeg.org/git/ffmpeg.git
+# cd ffmpeg
+# ./configure --enable-gpl --enable-libx264
+# make
+# make install
+# ldconfig
+```
+
 ## 3-Configurar el servidor
 
 Para configurar un servidor primer necesita tener un archivo de configuración. Aca adentro podra encontrar un archivo de configuración con varias aplicaciones rtmp. Si usted lo desea puede crear su propio archivo de configuración. Los archivos de configuración se encuentran en la carpeta conf.
